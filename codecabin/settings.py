@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 HOST1 = os.environ.get('CODEANYWHERE_HOST')
-ALLOWED_HOSTS = [HOST1, 'code-cabin-d74544e083a8.herokuapp.com','localhost' ]
+ALLOWED_HOSTS = [HOST1, 'code-cabin-d74544e083a8.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -129,7 +129,7 @@ STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-MEDIA_URL = '/media'
+MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # Default primary key field type
