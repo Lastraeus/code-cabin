@@ -13,7 +13,7 @@ def BookingFormView(request):
             # finally save the object now that the user has been set
             object.save()
 
-            return HttpResponseRedirect('/thanks/')
+            return HttpResponseRedirect('/')
     else:
         form = BookingForm()
 
